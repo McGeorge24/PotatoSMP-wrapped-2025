@@ -1,7 +1,7 @@
 import json
 import os
 
-STATS_DIR = "stats/"
+STATS_DIR = "statistike_igralcev"
 
 total_deaths = 0
 all_players: dict[str, int] = {}

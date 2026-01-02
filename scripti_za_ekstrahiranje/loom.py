@@ -1,7 +1,7 @@
 import json
 import os
 
-STATS_DIR = "stats/"
+STATS_DIR = "statistike_igralcev"
 
 total = 0
 all_players: dict[str, int] = {}
@@ -14,13 +14,13 @@ for file in os.listdir(STATS_DIR):
         data = json.load(f)
 
     interactions = data.get("stats", {}).get(
-        "minecraft:crafted", {}).get("minecraft:tipped_arrow", {}) if data.get("stats", {}).get(
-        "minecraft:crafted", {}).get("minecraft:tipped_arrow", {}) else 0
+        "minecraft:custom", {}).get("minecraft:interact_with_loom", {}) if data.get("stats", {}).get(
+        "minecraft:custom", {}).get("minecraft:interact_with_loom", {}) else 0
     # print(f"{playername}:{deaths}")
     all_players[playername] = interactions
     total += interactions
 
-print("Total tipped arrows crafted on server:", total)
+print("Total interactions with loom on server:", total)
 
 for playername, playerstat in sorted(all_players.items(), key=lambda x: x[1], reverse=True):
     print(f"{playername}:{playerstat}")

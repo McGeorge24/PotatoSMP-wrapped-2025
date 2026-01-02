@@ -1,9 +1,9 @@
 import json
 import os
 
-STATS_DIR = "stats/"
+STATS_DIR = "statistike_igralcev"
 
-total = 0
+total_time_played = 0
 all_players: dict[str, int] = {}
 
 for file in os.listdir(STATS_DIR):
@@ -13,14 +13,12 @@ for file in os.listdir(STATS_DIR):
     with open(os.path.join(STATS_DIR, file)) as f:
         data = json.load(f)
 
-    interactions = data.get("stats", {}).get(
-        "minecraft:used", {}).get("minecraft:potato", {}) if data.get("stats", {}).get(
-        "minecraft:used", {}).get("minecraft:potato", {}) else 0
-    # print(f"{playername}:{deaths}")
-    all_players[playername] = interactions
-    total += interactions
+    time_played = data.get("stats", {}).get(
+        "minecraft:custom", {}).get("minecraft:play_time", {}) / 72000
+    all_players[playername] = time_played
+    total_time_played += time_played
 
-print("Total potato uses on server:", total)
+print("Total time played on server:", total_time_played)
 
 for playername, playerstat in sorted(all_players.items(), key=lambda x: x[1], reverse=True):
     print(f"{playername}:{playerstat}")

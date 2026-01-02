@@ -1,10 +1,10 @@
 import json
 import os
 
-STATS_DIR = "stats/"
+STATS_DIR = "statistike_igralcev"
 
 total_blocks_mined = 0
-all_players : dict[str, int] = {}
+all_players: dict[str, int] = {}
 
 for file in os.listdir(STATS_DIR):
     if not file.endswith(".json"):

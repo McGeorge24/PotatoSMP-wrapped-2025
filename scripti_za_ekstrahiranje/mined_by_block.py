@@ -1,7 +1,7 @@
 import json
 import os
 
-STATS_DIR = "stats/"
+STATS_DIR = "statistike_igralcev"
 
 total_deaths = 0
 all_blocks: dict[str, int] = {}
@@ -18,5 +18,5 @@ for file in os.listdir(STATS_DIR):
         all_blocks[block] = all_blocks.get(block, 0) + amount
 
 
-for playername, playerstat in sorted(all_blocks.items(), key=lambda x: x[1], reverse=True):
-    print(f"{playername}:{playerstat}")
+for blockname, blockstat in sorted(all_blocks.items(), key=lambda x: x[1], reverse=True):
+    print(f"{blockname}:{blockstat}")

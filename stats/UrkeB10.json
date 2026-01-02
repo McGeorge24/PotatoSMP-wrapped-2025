@@ -1,0 +1,76 @@
+{
+  "stats": {
+    "minecraft:crafted": {
+      "minecraft:stick": 2,
+      "minecraft:wooden_pickaxe": 1,
+      "minecraft:spruce_boat": 1,
+      "minecraft:spruce_planks": 24,
+      "minecraft:stone_pickaxe": 1,
+      "minecraft:crafting_table": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:spruce_log": 6,
+      "minecraft:dirt": 1,
+      "minecraft:stick": 2,
+      "minecraft:cobblestone": 37,
+      "minecraft:tripwire_hook": 2,
+      "minecraft:firework_rocket": 34,
+      "minecraft:wheat_seeds": 1,
+      "minecraft:white_bed": 1,
+      "minecraft:crafting_table": 2,
+      "minecraft:elytra": 1,
+      "minecraft:golden_carrot": 13,
+      "minecraft:written_book": 1
+    },
+    "minecraft:dropped": {
+      "minecraft:firework_rocket": 2
+    },
+    "minecraft:mined": {
+      "minecraft:spruce_log": 6,
+      "minecraft:crafting_table": 2,
+      "minecraft:grass_block": 1,
+      "minecraft:spruce_leaves": 6,
+      "minecraft:stone": 37,
+      "minecraft:white_bed": 1
+    },
+    "minecraft:used": {
+      "minecraft:elytra": 1,
+      "minecraft:spruce_boat": 1,
+      "minecraft:crafting_table": 2,
+      "minecraft:wooden_pickaxe": 37,
+      "minecraft:written_book": 1,
+      "minecraft:dirt": 1,
+      "minecraft:firework_rocket": 5,
+      "minecraft:golden_carrot": 4
+    },
+    "minecraft:custom": {
+      "minecraft:talked_to_villager": 1,
+      "minecraft:time_since_rest": 56,
+      "minecraft:leave_game": 2,
+      "minecraft:damage_taken": 1314,
+      "minecraft:boat_one_cm": 43780,
+      "minecraft:open_shulker_box": 1,
+      "minecraft:time_since_death": 0,
+      "minecraft:aviate_one_cm": 66021,
+      "minecraft:open_enderchest": 1,
+      "minecraft:total_world_time": 24449,
+      "minecraft:crouch_one_cm": 791,
+      "minecraft:climb_one_cm": 41,
+      "minecraft:deaths": 2,
+      "minecraft:interact_with_crafting_table": 4,
+      "minecraft:walk_one_cm": 91545,
+      "minecraft:walk_under_water_one_cm": 569,
+      "minecraft:play_time": 24449,
+      "minecraft:damage_dealt": 44,
+      "minecraft:jump": 428,
+      "minecraft:drop": 2,
+      "minecraft:sprint_one_cm": 32895,
+      "minecraft:open_chest": 32,
+      "minecraft:fall_one_cm": 17848,
+      "minecraft:fly_one_cm": 78191,
+      "minecraft:walk_on_water_one_cm": 2046,
+      "minecraft:sneak_time": 335
+    }
+  },
+  "DataVersion": 4671
+}

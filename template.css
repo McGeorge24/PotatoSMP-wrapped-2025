@@ -1,0 +1,13 @@
+h1 {
+    font-family: monospace;
+    font-size: 5vh;
+}
+
+p {
+    font-family: monospace;
+}
+
+section {
+    margin: 5%;
+    background-color: lightgray;
+}
